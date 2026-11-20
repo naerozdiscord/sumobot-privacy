@@ -32,17 +32,16 @@ Sumo Bot enregistre surtout des **identifiants Discord** (numéros de membres, d
 | Sauvegardes de serveur (`+backupserveur`) | Structure du serveur : noms et réglages des rôles et des salons. Pas les messages. |
 | Journaux techniques du développeur | Commandes utilisées, erreurs, arrivée ou départ du bot d'un serveur, actions de modération. Pas le contenu des messages des membres. |
 
-Le statut en ligne des membres sert uniquement à afficher le compteur « En ligne ». Il n'est jamais enregistré.
+Sumo Bot n'utilise pas le statut en ligne ni les activités des membres (jeux, musique…) : il ne les lit pas et ne les enregistre pas.
 
 ## 3. Pourquoi ces données sont utilisées
 
 Les données servent uniquement à faire fonctionner les commandes du bot et à protéger les serveurs. Elles ne servent jamais à de la publicité, à du profilage commercial ou à entraîner une intelligence artificielle.
 
-Sumo Bot utilise trois autorisations spéciales de Discord, appelées *intents privilégiés* :
+Sumo Bot utilise deux autorisations spéciales de Discord, appelées *intents privilégiés* :
 
 - **Contenu des messages** : lire les commandes écrites avec le préfixe (par exemple `+help`), détecter les liens, le spam et les mots interdits, répondre aux réponses automatiques, faire respecter les salons réservés aux médias, et créer les transcripts de tickets et le modmail. Le contenu est lu au moment où le message arrive. Il n'est enregistré que dans les cas listés au point 2.
 - **Membres du serveur** : messages de bienvenue et de départ, rôle automatique, anti-raid (âge des comptes), suivi des invitations, compteurs de membres, remerciement des boosts et recherche des membres inactifs.
-- **Présence** : afficher le nombre de membres en ligne dans le compteur « En ligne ».
 
 Les journaux techniques servent au créateur à corriger les bugs et à repérer les abus du bot.
 
