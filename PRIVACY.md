@@ -68,7 +68,8 @@ Les données ne sont **jamais vendues ni partagées** avec une entreprise ou une
 - **Accès** : seuls le créateur et les co-propriétaires qu'il désigne peuvent voir les journaux techniques et les sauvegardes. Sur chaque serveur, les administrateurs et le staff voient les données de leur propre serveur (sanctions, tickets, candidatures) selon leurs permissions.
 - **Paiements** : Sumo Bot ne traite aucun paiement et ne voit aucune donnée bancaire. Il affiche seulement les adresses ou liens de paiement configurés par le serveur. Le paiement se fait directement sur PayPal, Revolut ou la blockchain concernée.
 - **Sites externes** : pour les notifications `+notif`, le bot consulte les flux publics de YouTube et l'API de Twitch. Il n'y envoie aucune donnée sur les membres.
-- **Sécurité** : les fichiers sont écrits de façon sécurisée pour éviter les pertes, et une sauvegarde est faite chaque jour. Aucun système n'est sûr à 100 %. En cas de fuite de données, les serveurs concernés seront prévenus.
+- **Chiffrement** : toutes les données enregistrées sur le disque (fichiers de données, statistiques, journaux techniques et sauvegardes) sont chiffrées au repos (Fernet : AES-128 et HMAC-SHA256). La clé est gardée à part, dans la configuration privée du bot.
+- **Sécurité** : les fichiers sont écrits de façon sécurisée pour éviter les pertes, et une sauvegarde chiffrée est faite chaque jour. Aucun système n'est sûr à 100 %. En cas de fuite de données, les serveurs concernés seront prévenus.
 
 ## 6. Tes droits et contact
 
